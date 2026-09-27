@@ -72,7 +72,7 @@ p { margin: 0 0 20px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 /* 開発実績と、作品ごとの識別色 */
-.highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.highlights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .highlights a { display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); text-decoration: none; }
 .highlights a:hover { border-color: var(--accent); }
 .highlights strong { color: var(--accent); font-size: 1.3rem; }
