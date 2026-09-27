@@ -70,3 +70,20 @@ p { margin: 0 0 20px; }
   .card-body { padding: 22px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* 開発実績と、作品ごとの識別色 */
+.highlights { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.highlights a { display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); text-decoration: none; }
+.highlights a:hover { border-color: var(--accent); }
+.highlights strong { color: var(--accent); font-size: 1.3rem; }
+.highlights span { font-size: .85rem; color: var(--muted); }
+.visual-coop { background: #44343e; color: #f1c6da; }
+.visual-tackle { background: #3d354b; color: #ded0f2; }
+.visual-coin { background: #443d28; color: #f3e0a4; }
+.visual-penguin { background: #28414a; color: #c6eaf3; }
+.project-visual span { font-size: clamp(2rem, 5vw, 3.6rem); }
+.card-body .project-role { font-size: .8rem; color: var(--text); }
+.project-facts dd, .detail-header h1, .card-body h3 { overflow-wrap: anywhere; min-width: 0; }
+.project-links { padding-left: 1.3em; }
+.project-links li { margin-bottom: 12px; }
+@media (max-width: 800px) { .highlights { grid-template-columns: 1fr; } }

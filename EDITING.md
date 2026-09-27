@@ -9,11 +9,15 @@ index.html                トップページ：自己紹介・作品一覧・リ
 style.css                 全ページ共通のデザイン・スマートフォン表示
 script.js                 フッターの年を自動更新
 projects/
-  thesausage.html          TheSausageの作品紹介
-  siv3d-game.html          Siv3D作品の紹介
+  thesausage.html          BeyondTheSausageの作品紹介
+  siv3d-game.html          GOATの作品紹介
+  handinhand.html         TGS 2025展示作品
+  detectackle.html        デカタックル
+  workingjumpman.html     高梁市Unityゲームジャム2025作品
+  lastpenguin.html        高梁市Unityゲームジャム2024作品
   _template.html          新しい作品用の複製元
 images/
-  thesausage/             TheSausageの画像
+  thesausage/             BeyondTheSausageの画像
   siv3d/                  Siv3D作品の画像
   profile/                プロフィール画像
 ```
@@ -68,3 +72,11 @@ index.htmlをブラウザで開くとローカルで確認できます。作品�
 このファイル構成はリポジトリのルートからの公開を想定しています。既存のGitHub Pages設定で公開元がmainブランチのルートになっていれば、変更をコミット・プッシュすると公開処理の対象になります。docs/や独自のActions構成を使用している場合は、その公開元に合わせて配置してください。
 
 今回の追加作業では、コミット・プッシュ・GitHub Pagesの設定変更は行っていません。
+
+## 開発経験の掲載内容について
+
+6作品の概要、制作期間、担当、関連リンクを掲載しています。BeyondTheSausageの個別の担当役職は未提供のため、推測して記載していません。高梁市2025作品は正式タイトルが確認できなかったため、ゲーム内容で表記しています。
+
+GOATはC++ / Siv3D、制作期間は2025/10/18〜11/2（約2週間）として掲載しています。公式受賞結果に合わせ、エントリー規模は185名・56作品としています。Siv3Dの開発元をバンダイナムコとする説明は掲載していません。
+
+BeyondTheSausageの最終選抜・約50万円の支援と各作品の担当役割は、本人から提供された内容に基づきます。作品画像と具体的な実装機能は、情報が揃った段階で各ページへ追加できます。
