@@ -87,3 +87,7 @@ p { margin: 0 0 20px; }
 .project-links { padding-left: 1.3em; }
 .project-links li { margin-bottom: 12px; }
 @media (max-width: 800px) { .highlights { grid-template-columns: 1fr; } }
+
+/* 正方形のタイトル画像と小さなドット絵を、切り抜かずに表示します。 */
+.project-image--contain { object-fit: contain; background: #28414a; }
+.project-image--pixel { object-fit: contain; padding: clamp(40px, 8vw, 70px); image-rendering: pixelated; background: #443d28; }
