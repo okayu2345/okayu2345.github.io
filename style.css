@@ -43,6 +43,15 @@ p { margin: 0 0 20px; }
 .status { display: inline-block; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; font-size: .7rem; padding: 3px 9px; }
 .about-layout { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; }
 .about-content > h3:not(:first-child) { margin-top: 30px; }
+.about-body { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 28px; align-items: start; }
+.about-photo { margin: 0; }
+.about-photo a { display: block; }
+.about-photo img { display: block; width: 100%; height: auto; border-radius: 8px; }
+.about-photo figcaption { margin-top: 10px; color: var(--muted); font-size: .8rem; }
+@media (max-width: 900px) {
+  .about-body { grid-template-columns: 1fr; }
+  .about-photo { width: min(100%, 320px); }
+}
 .chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
 .chips li { padding: 4px 15px; border: 1px solid var(--line); border-radius: 4px; font-size: .85rem; }
 .text-link { color: var(--accent); }
