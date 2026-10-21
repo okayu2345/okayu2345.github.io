@@ -85,11 +85,21 @@ p { margin: 0 0 20px; }
 .policy-card h3 { font-size: 1.1rem; }
 .policy-card > p:last-child { color: var(--muted); font-size: .95rem; margin-bottom: 0; }
 @media (max-width: 900px) { .policy-grid { grid-template-columns: 1fr; } }
-.highlights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
-.highlights a { display: flex; flex-direction: column; gap: 12px; padding: 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); text-decoration: none; }
-.highlights a:hover { border-color: var(--accent); }
-.highlights strong { color: var(--accent); font-size: 1.3rem; }
-.highlights span { font-size: .85rem; color: var(--muted); }
+.achievements-section { padding-block: 44px 64px; }
+.achievements-section h2 { font-size: clamp(1.65rem, 4vw, 2.5rem); margin-bottom: 28px; }
+.highlights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.highlights .achievement { display: flex; flex-direction: column; align-items: flex-start; gap: 18px; padding: clamp(24px, 3.5vw, 38px); border: 2px solid transparent; border-radius: 12px; color: #14201f; text-decoration: none; }
+.achievement-award { background: #f4d878; }
+.achievement-support { background: #c8ee97; }
+.achievement-tgs { background: #bbdef1; }
+.achievement-bitsummit { background: #dccaf0; }
+.achievement:hover { border-color: #fff; box-shadow: 0 8px 28px #0004; }
+.achievement-category { border: 1px solid currentColor; border-radius: 4px; padding: 3px 10px; font-size: .75rem; font-weight: 700; }
+.achievement strong { font-size: clamp(2.1rem, 4.7vw, 3.6rem); font-weight: 850; line-height: 1.25; letter-spacing: -.035em; overflow-wrap: anywhere; }
+.achievement-prefix, .achievement-unit { font-size: .52em; letter-spacing: 0; }
+.achievement-context { font-size: .95rem; line-height: 1.8; }
+.achievement-footer { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; margin-top: auto; padding-top: 18px; border-top: 1px solid #14201f40; font-size: .9rem; font-weight: 700; }
+.achievement-footer > span { font-size: 1.4rem; }
 .visual-coop { background: #44343e; color: #f1c6da; }
 .visual-tackle { background: #3d354b; color: #ded0f2; }
 .visual-coin { background: #443d28; color: #f3e0a4; }
