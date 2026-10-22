@@ -17,6 +17,7 @@
   <main id="main" class="container detail">
     <a class="back-link" href="../index.html#projects">← 制作作品一覧</a>
     <header class="detail-header"><p class="eyebrow">PROJECT / Unity / C# / VR</p><h1>BeyondTheSausage</h1><p>ソーセージを題材にしたVRゲーム。Made in Japan XR Projectの最終選抜チームとして、約50万円の支援を受けながら開発中。</p><p class="notice">開発中 / 支援プログラム採択</p></header>
+    <aside class="notice" aria-label="ソースコードの公開について"><strong>ソースコードの公開について</strong><p>本作は現在、企業様のご支援を受けながら商品化に向けて開発中です。そのため、詳細なソースコードの公開は控えさせていただいております。本ページおよび技術解説資料では、担当範囲と技術的な工夫の概要をご紹介しています。</p></aside>
     <figure class="sausage-figure"><img class="detail-image" src="../images/thesausage/gameplay.png" alt="開発中のゲーム画面。ソーセージから発射方向のガイドが伸びている" width="1672" height="941"><figcaption>開発中のゲーム画面：引っ張る方向と強さを調整し、コースを攻略します。</figcaption></figure>
     <section class="detail-section" aria-labelledby="role-title">
       <h2 id="role-title">担当：ゲーム企画全般・ソーセージの操作</h2>
@@ -33,12 +34,7 @@
       <p>初期のRayを当てて掴む方式では、腕の位置が制約され、空中で対象を捉え直しにくいという課題がありました。現在はRayの命中を条件にせず、Triggerで操作を開始する方式に変更しています。</p>
       <h3>実装：Rig内の位置差から、引っ張り量を計算</h3>
       <p>手のワールド座標だけで計算すると、視点を移動させた分まで発射の強さへ加わります。現在のRig内で手の位置差を求め、掴み始めの変換行列で方向を戻すことで、Rig移動による入力の上乗せを抑えています。</p>
-      <pre class="sausage-code"><code>// GetLaunchVector() の抜粋（表示用に改行を調整）
-Vector3 current = pull.ReferenceSpace != null
-    ? pull.ReferenceSpace.InverseTransformPoint(pull.Controller.position)
-    : pull.Controller.position;
-Vector3 input = pull.ReferenceToWorldAtGrab.MultiplyVector(
-    current - pull.StartControllerPosition);</code></pre>
+      <p class="sausage-source-note">処理の概要：手の位置をRig内へ変換 → 開始時との差を計算 → 掴み始めの基準でワールド方向へ戻す。詳細なソースコードは非公開としています。</p>
       <p>腕の基本移動量は35cmで最大入力になる設定とし、前後方向の可動域も補助。入力距離と発射速度を別々に調整できる構成にしています。</p>
     </section>
     <section class="detail-section" aria-labelledby="state-title">
