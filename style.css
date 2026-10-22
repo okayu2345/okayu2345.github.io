@@ -124,3 +124,12 @@ p { margin: 0 0 20px; }
 /* 正方形のタイトル画像と小さなドット絵を、切り抜かずに表示します。 */
 .project-image--contain { object-fit: contain; background: #28414a; }
 .project-image--pixel { object-fit: contain; padding: clamp(40px, 8vw, 70px); image-rendering: pixelated; background: #443d28; }
+.gameplay-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+  background: #182c36;
+  border-radius: 12px;
+}
+.card-resources { display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 0 22px 22px; font-size: .9rem; }
