@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 220" role="img">
+<rect width="499" height="220" fill="white"/>
+<rect x="151" y="0" width="197" height="55" rx="5" fill="#EDF4F0"/>
+<text x="165" y="22" font-family="Yu Gothic,Meiryo,sans-serif" font-size="13" font-weight="700" fill="#176951">GameScene</text>
+<text x="165" y="41" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">入力・進行・更新の呼び出し</text>
+<path d="M190 55 L99 106" stroke="#176951" stroke-width="1.5" fill="none"/>
+<path d="M99 106 L102.1869821924165 100.91638470129573" stroke="#176951" stroke-width="1.5" fill="none"/>
+<path d="M99 106 L104.99964859910851 105.93506397598146" stroke="#176951" stroke-width="1.5" fill="none"/>
+<path d="M309 55 L400 106" stroke="#176951" stroke-width="1.5" fill="none"/>
+<path d="M400 106 L394.0003514008915 105.93506397598146" stroke="#176951" stroke-width="1.5" fill="none"/>
+<path d="M400 106 L396.8130178075835 100.91638470129573" stroke="#176951" stroke-width="1.5" fill="none"/>
+<text x="44" y="80" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">足場を追加</text>
+<text x="357" y="80" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">移動を更新</text>
+<rect x="0" y="108" width="197" height="62" rx="5" fill="#EDF4F0"/>
+<text x="14" y="130" font-family="Yu Gothic,Meiryo,sans-serif" font-size="13" font-weight="700" fill="#176951">Stage</text>
+<text x="14" y="151" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">配置と描いた足場を保持</text>
+<rect x="302" y="108" width="197" height="62" rx="5" fill="#EDF4F0"/>
+<text x="316" y="130" font-family="Yu Gothic,Meiryo,sans-serif" font-size="13" font-weight="700" fill="#176951">Player</text>
+<text x="316" y="151" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">移動・衝突・ジャンプ</text>
+<path d="M197 137 L302 137" stroke="#176951" stroke-width="1.5" fill="none"/>
+<path d="M302 137 L296.73450462865776 139.87655323162522" stroke="#176951" stroke-width="1.5" fill="none"/>
+<path d="M302 137 L296.73450462865776 134.12344676837478" stroke="#176951" stroke-width="1.5" fill="none"/>
+<text x="212" y="126" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">足場データ</text>
+<text x="84" y="201" font-family="Yu Gothic,Meiryo,sans-serif" font-size="11" font-weight="700" fill="#176951">GameSceneが足場データを渡して、道と移動をつなぐ</text>
+</svg>

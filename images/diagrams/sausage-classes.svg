@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 220" role="img">
+<rect width="499" height="220" fill="white"/>
+<rect x="0" y="5" width="151" height="92" rx="5" fill="#FFF1E6"/>
+<rect x="174" y="5" width="151" height="92" rx="5" fill="#FFF1E6"/>
+<rect x="348" y="5" width="151" height="92" rx="5" fill="#FFF1E6"/>
+<text x="10" y="25" font-family="Yu Gothic,Meiryo,sans-serif" font-size="12" font-weight="700" fill="#B74925">入力</text>
+<text x="10" y="44" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">ControllerRay</text>
+<text x="10" y="57" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">SausageInteractor</text>
+<text x="10" y="82" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">左右の入力・振動</text>
+<text x="184" y="25" font-family="Yu Gothic,Meiryo,sans-serif" font-size="12" font-weight="700" fill="#B74925">発射制御</text>
+<text x="184" y="46" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">SausagePullLauncher</text>
+<text x="184" y="82" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">操作状態・発射・回復</text>
+<text x="358" y="25" font-family="Yu Gothic,Meiryo,sans-serif" font-size="12" font-weight="700" fill="#B74925">軌道表示</text>
+<text x="358" y="46" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">TrajectoryArrow</text>
+<text x="358" y="82" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">速度をもとに予測</text>
+<path d="M151 52 L174 52" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<path d="M174 52 L168.73450462865776 54.876553231625216" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<path d="M174 52 L168.73450462865776 49.123446768374784" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<path d="M325 52 L348 52" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<path d="M348 52 L342.73450462865776 54.876553231625216" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<path d="M348 52 L342.73450462865776 49.123446768374784" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<text x="5" y="113" font-family="Yu Gothic,Meiryo,sans-serif" font-size="9" font-weight="400" fill="#202E35">入力を送る →</text>
+<text x="352" y="113" font-family="Yu Gothic,Meiryo,sans-serif" font-size="9" font-weight="400" fill="#202E35">発射速度を受け取る</text>
+<rect x="150" y="155" width="199" height="58" rx="5" fill="#FFF1E6"/>
+<text x="162" y="173" font-family="Yu Gothic,Meiryo,sans-serif" font-size="11" font-weight="700" fill="#B74925">SausagePhysicsConfig</text>
+<text x="162" y="194" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">入力距離・発射速度・回復条件</text>
+<path d="M249 155 L249 99" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<path d="M249 99 L251.87655323162522 104.26549537134224" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<path d="M249 99 L246.12344676837478 104.26549537134224" stroke="#B74925" stroke-width="1.5" fill="none"/>
+<text x="260" y="138" font-family="Yu Gothic,Meiryo,sans-serif" font-size="10" font-weight="400" fill="#202E35">調整値を参照</text>
+</svg>

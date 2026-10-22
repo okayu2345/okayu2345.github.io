@@ -41,6 +41,11 @@
     <section class="detail-section" aria-labelledby="overview-title"><h2 id="overview-title">開発情報</h2><dl class="project-facts"><dt>使用技術</dt><dd>C++ / Siv3D</dd><dt>制作期間</dt><dd>2025/10/18〜11/2（約2週間）</dd><dt>イベント・支援</dt><dd>バンダイナムコスタジオ杯 Siv3Dゲームジャム2025</dd><dt>担当</dt><dd>リーダー / リードプログラマー / プランナー</dd></dl></section>
     <section class="detail-section" aria-labelledby="section-0"><h2 id="section-0">ゲームの特徴</h2><p>マウスをドラッグして道をつくり、自動で動くヤギをゴールまで導く2Dパズルゲームです。道のつくり方を考えることが、攻略の中心となります。</p></section>
     <section class="detail-section" aria-labelledby="section-1"><h2 id="section-1">担当した役割</h2><p>リーダー・リードプログラマー・プランナーを兼任し、<strong>アニメーション以外のメインシステム全般</strong>を担当しました。足場生成、自動移動・衝突判定、ジャンプ制御、収集物・ゴール・ワープ、ステージ配置の仕組みを実装しています。</p></section>
+    <section class="detail-section" aria-labelledby="class-overview">
+      <h2 id="class-overview">クラス構成：地形と移動を分け、描いた道を受け渡す</h2>
+      <figure style="margin: 24px 0"><img src="../images/diagrams/goat-classes.svg" alt="GameSceneが入力と進行を管理し、Stageに足場を追加。Stageの足場データをPlayerへ渡して移動を更新する。" width="499" height="220" style="display: block; width: 100%; height: auto; background: white; border-radius: 8px"></figure>
+      <p>GameSceneがStageとPlayerを持つ<strong>コンポジション（包含）</strong>で構成。地形の保持と移動処理の責務を分けています。足場配列は<strong>const参照</strong>でPlayerへ渡し、コピーせず、読み取り専用で衝突判定に利用しています。</p>
+    </section>
     <section class="detail-section" aria-labelledby="movement-improvement">
       <h2 id="movement-improvement">技術的な工夫：小さな段差では跳ばない移動制御</h2>
       <h3>問題：わずかな凹凸でも大きくジャンプしてしまう</h3>
