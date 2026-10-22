@@ -133,3 +133,14 @@ p { margin: 0 0 20px; }
   border-radius: 12px;
 }
 .card-resources { display: flex; flex-wrap: wrap; gap: 12px 20px; padding: 0 22px 22px; font-size: .9rem; }
+.goat-award { display: grid; gap: 12px; padding: 26px; border-radius: 12px; background: #f4d878; color: #14201f; }
+.goat-award p { margin: 0; font-weight: 700; }
+.goat-award strong { font-size: clamp(2rem, 5vw, 3rem); line-height: 1.3; }
+.goat-award a { font-size: .85rem; }
+.goat-technology { margin-top: 24px; }
+.goat-technology strong { color: var(--accent); font-size: 1.3rem; }
+.download-panel { padding: clamp(20px, 4vw, 30px); border: 1px solid var(--accent); border-radius: 12px; background: var(--panel); }
+.download-button { display: inline-flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding: 14px 20px; border-radius: 8px; background: var(--accent); color: var(--bg); font-weight: 700; text-decoration: none; }
+.download-button:hover { background: #d9f6b6; }
+.download-button span { font-size: .85rem; }
+.download-help { margin: 18px 0 0; font-size: .85rem; color: var(--muted); }
